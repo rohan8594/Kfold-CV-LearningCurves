@@ -119,7 +119,7 @@ installation instructions on [http://fracpete.github.io/python-weka-wrapper3/ins
 **Please also note, if you’re using Mac** , **you might get an error “Python was unable to find
 JVM”. In this case, please execute the following command in your terminal:**
 ```
-**$ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home**
+$ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
 ```
 <br/>
 b) Once you have installed python-weka-wrapper3, you can open your terminal and navigate
@@ -154,7 +154,7 @@ where k = 5 or 10
 **NOTE: In order to plot the learning curve, you will need python’s matplotlib library
 installed. To install this, execute the command:**
 ```
-**$ pip install matplotlib**
+$ pip install matplotlib
 ```
 <br/>
 e) The final step is to apply the two learned classifiers to the test dataset found in
