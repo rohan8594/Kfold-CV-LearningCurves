@@ -93,46 +93,50 @@ instructions given below to install python-weka-wrapper3, javabridge and Oracle 
 
 First, you need to be able to compile C/C++ code and Python modules. Use the following
 command:
-
+```
 $ sudo apt-get install build-essential python3-dev
-
+```
 Now, you can install the various packages that we require for installing python-weka-
 wrapper3:
-
+```
 $ sudo apt-get install python3-pip python3-numpy
-
+```
 Install OpenJDK as well, in order to get all the header files that javabridge compiles against
 (but don’t use it for starting up JVMs):
-
+```
 $ sudo apt-get install default-jdk
-
+```
 Finally, you can use pip3 to install the Python packages that are not available in the
 repositories:
-
+```
 $ sudo pip3 install javabridge
 
 $ sudo pip3 install python-weka-wrapper
-
+```
 NOTE: If you are using Mac or any other OS for this project, please follow the
 installation instructions on [http://fracpete.github.io/python-weka-wrapper3/install.html](http://fracpete.github.io/python-weka-wrapper3/install.html)
 
 **Please also note, if you’re using Mac** , **you might get an error “Python was unable to find
 JVM”. In this case, please execute the following command in your terminal:**
-
+```
 **$ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home**
-
+```
 <br/>
 b) Once you have installed python-weka-wrapper3, you can open your terminal and navigate
 to the project directory. The first script to execute is classification.py to perform the initial
 classification task. Use the following command:
 
+```
 $ python3 classification.py
+```
 
 <br/>
 c) Next you can execute the k-fold cross validation module which can be found in the
 kfold_crossvalidation.py script:
 
+```
 $ python3 kfold_crossvalidation.py k
+```
 
 where k = 5 or 10
 
@@ -140,18 +144,22 @@ where k = 5 or 10
 d) Next you can execute the learning curve module which is present in the learning_curve.py
 script:
 
+```
 $ python3 learning_curve.py k
+```
 
 where k = 5 or 10
 
 
 **NOTE: In order to plot the learning curve, you will need python’s matplotlib library
 installed. To install this, execute the command:**
-
+```
 **$ pip install matplotlib**
-
+```
 <br/>
 e) The final step is to apply the two learned classifiers to the test dataset found in
 ‘adult_test.csv’. Use the following command:
 
+```
 $ python test.py
+```
